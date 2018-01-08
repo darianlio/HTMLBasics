@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Exercise</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+			<label for="firstname">First Name:</label>
+			<input id="firstname" name="firstname" type="text" placeholder="John" required>
+			<label for="lastname">Last Name:</label>
+			<input id="lastname" name="lastname" type="text" placeholder="Smith" required>
+		</div>
+
+		<div>
+			<label for="male">Male</label>
+			<input id="male" type="radio" name="gender" value="MALE">
+			<label for="female">Female</label>
+			<input id="female" type="radio" name="gender" value="FEMALE">
+			<label for="other">Other</label>
+			<input id="other" type="radio" name="gender" value="OTHER">
+		</div>
+		
+		<div>
+			<label for="email">Email:</label>
+			<input id="email" name="email" type="email" placeholder="your email" required>
+			<label for="password">Password:</label>
+			<input id="password" name="password" type="password" placeholder="your password" minlength="5" pattern=.{5,10} required title="5 to 10 characters">
+		</div>
+
+		<div>
+			<label for="birthday">Birthday:</label>
+			<select id="birthday" name="month">
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+			</select>
+			<select id="birthday" name="day">
+				<option>Day</option>
+				<option>1</option>
+				<option>2</option>
+			</select>
+			<select id="birthday" name="year">
+				<option>Year</option>
+				<option>2018</option>
+				<option>2017</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="check">I agree to terms and conditions</label>
+			<input id="check" name="checkbox" type="checkbox">
+		</div>
+
+		<button>Submit</button>
+	</form>
+</body>
+</html>
